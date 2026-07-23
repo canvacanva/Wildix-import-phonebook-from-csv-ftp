@@ -1,17 +1,4 @@
 <?php
-/**
- * Script di SOLO DEBUG: non tocca la rubrica su FTP, non fa il sync completo.
- *
- * FIX CONFERMATO dalla documentazione live /api/v1/doc/ del PBX:
- * l'endpoint Phonebooks/Contacts si aspetta i parametri annidati sotto una
- * singola chiave "data", in formato form-urlencoded classico
- * (es. data[name]=...&data[mobile]=...), NON JSON. Campo nome: "name".
- * Campo immagine: "picture" (non "image_url", quello e' solo interno al
- * backend CSV nativo di WMS).
- *
- * Lancialo con: php debug_phonebook.php
- * e incollami tutto l'output.
- */
 
 date_default_timezone_set('Europe/Rome');
 require '/var/credentials/cred.php';
